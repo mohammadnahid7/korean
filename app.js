@@ -115,6 +115,7 @@ dropdown.addEventListener("click", (e) => {
          e.target.textContent;
       mode = e.target.id;
       localStorage.setItem("mode", e.target.id);
+      handleMode()
    }
    // console.log(e.target.id);
 });
@@ -126,7 +127,7 @@ lesson.addEventListener("click", (e) => {
       lessonNum = e.target.id;
       localStorage.setItem("lesson", e.target.id);
       lessonHandler()
-      console.log(allWords)
+      handleMode()
    }
    // console.log(e.target.id);
 });
